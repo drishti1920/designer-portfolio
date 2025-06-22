@@ -1157,3 +1157,194 @@ body {
     transform: translateY(55px) scale3d(0.5, 0.5, 0.5);
   }
 }
+
+/* Responsive Enhancements for All Screen Sizes */
+
+@media (max-width: 1200px) {
+  .sidebar {
+    width: 260px;
+  }
+  .main-area {
+    margin-left: 260px;
+    width: calc(100% - 260px);
+  }
+  .id-card-image {
+    width: 260px;
+  }
+}
+
+@media (max-width: 900px) {
+  .sidebar {
+    width: 100vw;
+    height: auto;
+    position: relative;
+    border-radius: 0 0 20px 20px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+    z-index: 20;
+  }
+  .sidebar-content {
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 24px 16px;
+    gap: 24px;
+    height: auto;
+  }
+  .profile-image {
+    margin-bottom: 0;
+    margin-right: 16px;
+  }
+  .profile-name, .profile-title, .profile-location, .profile-experience {
+    text-align: left;
+    margin-bottom: 0;
+  }
+  .portfolio-btn {
+    margin-left: auto;
+  }
+  .main-area {
+    margin-left: 0;
+    width: 100vw;
+  }
+  .main-content {
+    flex-direction: column;
+  }
+  .id-card-container {
+    position: static;
+    margin: 0 auto 24px auto;
+    display: flex;
+    justify-content: center;
+  }
+  .id-card-image {
+    width: 180px;
+  }
+}
+
+@media (max-width: 700px) {
+  .sidebar {
+    width: 100vw;
+    min-width: 0;
+    padding: 0;
+  }
+  .sidebar-content {
+    flex-direction: column;
+    align-items: center;
+    padding: 24px 8px 8px 8px;
+    gap: 12px;
+  }
+  .profile-image img {
+    width: 80px;
+    height: 80px;
+  }
+  .profile-name {
+    font-size: 18px;
+    line-height: 22px;
+  }
+  .profile-title, .profile-location, .profile-experience {
+    font-size: 12px;
+  }
+  .main-area {
+    margin-left: 0;
+    width: 100vw;
+  }
+  .header {
+    padding: 12px 8px;
+  }
+  .hero-section, .portfolio-section {
+    padding: 32px 8px;
+  }
+  .hero-title {
+    font-size: 18px;
+    line-height: 26px;
+    margin-bottom: 10px;
+  }
+  .hero-text, .hero-text-bold {
+    font-size: 12px;
+    line-height: 16px;
+  }
+  .id-card-image {
+    width: 120px;
+  }
+  .projects-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+  .project-card-one, .project-card-two, .project-card-three, .project-card-four {
+    height: 200px;
+  }
+  .card-content h2 {
+    font-size: 16px;
+  }
+  .tags span {
+    font-size: 11px;
+    padding: 4px 8px;
+  }
+  .arrow-button {
+    width: 32px;
+    height: 32px;
+    bottom: 12px;
+    right: 12px;
+  }
+}
+
+@media (max-width: 480px) {
+  .sidebar {
+    width: 100vw;
+    min-width: 0;
+    padding: 0;
+    border-radius: 0;
+    box-shadow: none;
+  }
+  .sidebar-content {
+    padding: 12px 4px 4px 4px;
+    gap: 8px;
+  }
+  .profile-image img {
+    width: 56px;
+    height: 56px;
+  }
+  .profile-name {
+    font-size: 15px;
+    line-height: 18px;
+  }
+  .main-area {
+    margin-left: 0;
+    width: 100vw;
+  }
+  .header {
+    padding: 8px 4px;
+  }
+  .header-title {
+    font-size: 16px;
+  }
+  .hero-section, .portfolio-section {
+    padding: 16px 4px;
+  }
+  .hero-title {
+    font-size: 13px;
+    line-height: 16px;
+    margin-bottom: 6px;
+  }
+  .hero-text, .hero-text-bold {
+    font-size: 9px;
+    line-height: 12px;
+  }
+  .section-title {
+    font-size: 13px;
+  }
+  .section-description {
+    font-size: 9px;
+  }
+  .profile-name {
+    font-size: 11px;
+    line-height: 14px;
+  }
+  .profile-title, .profile-location, .profile-experience {
+    font-size: 8px;
+  }
+  .id-card-container {
+    display: none !important;
+  }
+  .portfolio-btn {
+    display: none !important;
+  }
+}
