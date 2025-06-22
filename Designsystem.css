@@ -741,114 +741,96 @@ body {
 }
 
 /* Responsive Design */
-@media (max-width: 768px) {
-    .header {
-        padding: 1rem;
-    }
-    
-    .intro-title {
-        font-size: 2.5rem;
-    }
-    
-    .intro-subtitle {
-        font-size: 1rem;
-    }
-    
-    .intro-section, .mock-image-section, .background-section,
-    .objectives-section, .process-section, .collaboration-section,
-    .outcomes-section, .learnings-section, .final-thoughts-section {
-        padding: 3rem 1rem;
-    }
-    
-    .project-details {
-        padding: 3rem 1rem;
-        grid-template-columns: 1fr;
-    }
-    
-    .tools-section {
-        padding: 3rem 1rem;
-    }
-    
-    .image-showcase {
-        padding: 3rem 1rem;
-        grid-template-columns: 1fr;
-    }
-    
-    .product-item {
-        flex-direction: column;
-        align-items: flex-start;
-    }
-    
-    .product-challenge {
-        text-align: left;
-    }
-    
-    .phase-header {
-        flex-direction: column;
-        text-align: center;
-    }
-    
-    .phase-header h3 {
-        margin: 1rem 0;
-    }
-    
-    .collaboration-table {
-        font-size: 0.875rem;
-    }
-    
-    .collaboration-table th, .collaboration-table td {
-        padding: 0.75rem;
-    }
-    
-    .planning-grid, .collaboration-grid {
-        grid-template-columns: 1fr;
-    }
-    
-    .problems-grid {
-        grid-template-columns: 1fr;
-    }
-    
-    .objectives-grid {
-        grid-template-columns: 1fr;
-    }
-    
-    .improvements-grid {
-        grid-template-columns: 1fr;
-    }
+@media (max-width: 1200px) {
+  .intro-title {
+    font-size: 2.25rem;
+  }
+  .tools-section h2,
+  .section-header h2,
+  .collaboration-section h2,
+  .outcomes-section h2,
+  .learnings-section h2,
+  .final-thoughts-section h2 {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 900px) {
+  .intro-title {
+    font-size: 2rem;
+  }
+  .tools-section h2,
+  .section-header h2,
+  .collaboration-section h2,
+  .outcomes-section h2,
+  .learnings-section h2,
+  .final-thoughts-section h2 {
+    font-size: 1.5rem;
+  }
+  .detail-card {
+    padding: 1.25rem;
+  }
+  .project-card, .learning-card {
+    padding: 1.25rem;
+  }
+}
+
+@media (max-width: 700px) {
+  .header {
+    flex-direction: row !important;
+    justify-content: space-between;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.5rem 5vw;
+  }
+  .intro-section, .mock-image-section, .background-section,
+  .objectives-section, .process-section, .collaboration-section,
+  .outcomes-section, .learnings-section, .final-thoughts-section {
+    padding-left: 5vw;
+    padding-right: 5vw;
+  }
+  .image-showcase {
+    padding-left: 5vw;
+    padding-right: 5vw;
+  }
+  .live-site-link {
+    font-size: 0.95rem;
+    padding: 8px 14px;
+    border-radius: 18px;
+  }
+  .external-link-icon {
+    width: 14px;
+    height: 14px;
+    margin-right: 6px;
+  }
 }
 
 @media (max-width: 480px) {
-    .intro-title {
-        font-size: 2rem;
-    }
-    
-    .section-header h2, .collaboration-section h2,
-    .outcomes-section h2, .learnings-section h2,
-    .final-thoughts-section h2 {
-        font-size: 1.875rem;
-    }
-    
-    .tools-section h2 {
-        font-size: 1.875rem;
-    }
-    
-    .detail-card {
-        padding: 1.5rem;
-    }
-    
-    .phase-content {
-        padding: 1.5rem;
-    }
-    
-    .learning-item {
-        padding: 1rem;
-    }
-    
-    .learning-icon {
-        font-size: 1.5rem;
-    }
-    
-    .step-image {
-        height: 12rem;
-    }
+  .header {
+    flex-direction: row !important;
+    justify-content: space-between;
+    align-items: center;
+    gap: 0.25rem;
+    padding: 0.25rem 4vw;
+  }
+  .intro-section, .mock-image-section, .background-section,
+  .objectives-section, .process-section, .collaboration-section,
+  .outcomes-section, .learnings-section, .final-thoughts-section {
+    padding-left: 4vw;
+    padding-right: 4vw;
+  }
+  .image-showcase {
+    padding-left: 4vw;
+    padding-right: 4vw;
+  }
+  .live-site-link {
+    font-size: 0.85rem;
+    padding: 7px 10px;
+    border-radius: 14px;
+  }
+  .external-link-icon {
+    width: 12px;
+    height: 12px;
+    margin-right: 4px;
+  }
 }
